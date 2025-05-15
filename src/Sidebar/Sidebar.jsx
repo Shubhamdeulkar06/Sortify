@@ -6,10 +6,10 @@ import Colors from "./Colors/Colors";
 
 const Sidebar = () => {
   return (
-    <aside className="w-[15%] h-screen fixed left-0 top-0 border-r border-[#e5e5e5] z-30 bg-white flex flex-col">
+    <aside className="w-[15%] h-screen fixed left-0 top-0 border-r border-[#e5e5e5] z-60 bg-white flex flex-col">
       
       {/* Fixed logo section */}
-      <div className="w-full  py-6 flex justify-center border-b border-[#e5e5e5]">
+      <div className="w-full border-r-2 border-white h-24 flex justify-center shadow-[0px_7px_6px_-4px_rgba(0,_0,_0,_0.8)]">
         <img src={Logo} alt="Sortify Logo" className="max-w-25 object-contain" />
       </div>
 

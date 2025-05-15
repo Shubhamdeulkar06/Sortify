@@ -3,7 +3,7 @@ import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai"
 
 const Nav = () => {
   return (
-    <nav className="flex border-b-2 border-b-pink-900 justify-around items-center p-5 z-50 ml-8">
+    <nav className="sticky top-0 bg-white flex shadow-[0px_7px_6px_-4px_rgba(0,_0,_0,_0.8)] justify-around items-center h-24 z-50 ml-8">
       <div className="nav-container ">
         <input className=' py-3 px-5 border-0 bg-[#f7f7f7] outline-0 rounded-md relative w-56' type="text" name="" id=""  placeholder='Search Products' />
       </div>
