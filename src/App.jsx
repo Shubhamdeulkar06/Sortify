@@ -17,9 +17,12 @@ function App() {
     setQuery(event.target.value);
   };
 
-  const filteredItems = products.filter((products) =>
-    products.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase() !== -1)
+   const filteredItems = products.filter(
+    (product) => product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
   );
+  // const filteredItems = products.filter((product) =>
+  //   product.title.toLowerCase().includes(query.toLowerCase())
+  // );
 
   // ************Radio Filter************
   const handleChange = (event) => {
@@ -51,17 +54,19 @@ function App() {
       );
     }
 
-    return filteredProducts.map(({ img, title, star, reviews, newPrice,prevPrice }) => (
-      <Card
-        key={Math.random()}
-        title={title}
-        img={img}
-        star={star}
-        reviews={reviews}
-        newPrice={newPrice}
-        prevPrice={prevPrice}
-      />
-    ));
+    return filteredProducts.map(
+      ({ img, title, star, reviews, newPrice, prevPrice }) => (
+        <Card
+          key={Math.random()}
+          title={title}
+          img={img}
+          star={star}
+          reviews={reviews}
+          newPrice={newPrice}
+          prevPrice={prevPrice}
+        />
+      )
+    );
   }
 
   const result = filteredData(products, selectedCategory, query);

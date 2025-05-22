@@ -4,7 +4,7 @@ import Category from "./Category/Category";
 import Price from "./Price/Price";
 import Colors from "./Colors/Colors";
 
-const Sidebar = (handleChange) => {
+const Sidebar = ({handleChange}) => {
   return (
     <aside className="w-[15%] h-screen fixed left-0 top-0 border-r border-[#e5e5e5] z-60 bg-white flex flex-col">
       {/* Fixed logo section */}

@@ -12,7 +12,7 @@ const Colors = ({ handleChange }) => {
             onChange={handleChange}
             type="radio"
             name="test3"
-            value=""
+            value="all"
             className="peer absolute opacity-0 cursor-pointer"
           />
           <span className="absolute top-0 left-0 h-5 w-5 bg-gradient-to-b from-blue-500 to-red-500 rounded-full after:content-[''] after:absolute after:hidden peer-checked:after:block after:top-[6.4px] after:left-[6.4px] after:w-[7px] after:h-[7px] after:rounded-full after:bg-white peer-hover:bg-[#ccc] peer-checked:bg-[#2196f3]"></span>
