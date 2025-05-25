@@ -15,6 +15,7 @@ function App() {
 
   const handleInputChange = (event) => {
     setQuery(event.target.value);
+    console.log(query)
   };
 
    const filteredItems = products.filter(

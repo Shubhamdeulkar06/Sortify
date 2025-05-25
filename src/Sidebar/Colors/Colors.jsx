@@ -9,7 +9,7 @@ const Colors = ({ handleChange }) => {
       <div className="mt-5">
         <label className="block relative pl-9 mb-3 cursor-pointer select-none">
           <input
-            onChange={handleChange}
+            handleChange={handleChange}
             type="radio"
             name="test3"
             value="all"
@@ -19,28 +19,28 @@ const Colors = ({ handleChange }) => {
           All
         </label>
         <Input
-          onChange={handleChange}
+          handleChange={handleChange}
           value="black"
           color="black"
           name="test3"
           title="Black"
         />
         <Input
-          onChange={handleChange}
+          handleChange={handleChange}
           value="green"
           color="green"
           name="test3"
           title="Green"
         />
         <Input
-          onChange={handleChange}
+          handleChange={handleChange}
           value="blue"
           color="blue"
           name="test3"
           title="Blue"
         />
         <Input
-          onChange={handleChange}
+          handleChange={handleChange}
           value="red"
           color="red"
           name="test3"
@@ -48,7 +48,7 @@ const Colors = ({ handleChange }) => {
         />
         <label className="block relative pl-9 mb-3 cursor-pointer select-none">
           <input
-            onChange={handleChange}
+            handleChange={handleChange}
             type="radio"
             name="test3"
             value="white"
