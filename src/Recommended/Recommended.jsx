@@ -3,7 +3,7 @@ import Button from '../components/Button'
 
 const Recommended = ({handleClick}) => {
   return (
-    <div>
+    <div className='text-white'>
       <h2 className='ml-8 lg:ml-80 my-5 text-xl '>Recommended</h2>
       <div className="recommended-btns ml-8 lg:ml-80 flex flex-wrap">
         <Button onClickHandler={handleClick} title="All Products" value=""/>

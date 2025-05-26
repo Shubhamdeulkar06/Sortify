@@ -1,20 +1,15 @@
 import React from "react";
-import Logo from "../assets/sortify.png";
 import Category from "./Category/Category";
 import Price from "./Price/Price";
 import Colors from "./Colors/Colors";
 
-const Sidebar = ({handleChange}) => {
+const Sidebar = ({handleChange, isOpen}) => {
   return (
-    <aside className="w-[15%] h-screen fixed left-0 top-0 border-r border-[#e5e5e5] z-60 bg-white flex flex-col">
-      {/* Fixed logo section */}
-      <div className="w-full border-r-2 border-white h-24 flex justify-center shadow-[0px_7px_6px_-4px_rgba(0,_0,_0,_0.8)]">
-        <img
-          src={Logo}
-          alt="Sortify Logo"
-          className="max-w-25 object-contain"
-        />
-      </div>
+    <aside className={`fixed top-0 left-0 mt-24 h-screen w-[70%] lg:w-[15%] z-40 bg-[#1d1c1c] text-white border-r border-gray-200 shadow-md transform transition-transform duration-300 ease-in-out 
+      ${isOpen ? "translate-x-0" : "-translate-x-full"} 
+      lg:translate-x-0 lg:flex lg:flex-col`}>
+      
+     
 
       {/* Scrollable content */}
       <div className="flex-1 overflow-y-auto scrollbar-hide px-4 pt-4">
